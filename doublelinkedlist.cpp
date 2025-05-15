@@ -96,7 +96,11 @@ class Doublelinkedlist
 
             Node *current = START;
 
-           
+            //step 1 : traverse the list to find the node
+            while (current != NULL && current->nomMhs != rollNo)
+                current = current->next;
+
+            if (current == NULL)
             {
              
             }
