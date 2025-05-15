@@ -52,7 +52,9 @@ class Doublelinkedlist
                 //step 6: newNode.prev = NULL
                 newNode->prev = NULL;
 
-               
+                //step7: START = newNode
+                START = newNode;
+                return;
             }
 
           
