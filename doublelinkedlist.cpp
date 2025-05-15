@@ -132,7 +132,7 @@ class Doublelinkedlist
 
         void traverse()
         {
-          
+            if (START == NULL)
             {
         
             }
