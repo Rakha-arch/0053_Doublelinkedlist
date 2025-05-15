@@ -173,7 +173,11 @@ class Doublelinkedlist
             cout << "\nRecords in descending order of roll number are:\n";
             while (currentNode != NULL)
             {
-                
+                cout << i + 1 << "." << currentNode->nomMhs << " "<< endl;
+
+                //step 3 : MOVE to previous node
+                currentNode = currentNode->prev;
+                i--;
             }
         }
 
