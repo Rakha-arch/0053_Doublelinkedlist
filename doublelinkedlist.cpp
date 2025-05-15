@@ -86,7 +86,8 @@ class Doublelinkedlist
         {
             if (START == NULL)
             {
-               
+                cout << "\nlist is empty" << endl;
+                return;
             }
 
            
