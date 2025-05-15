@@ -34,7 +34,8 @@ class Doublelinkedlist
             // step 2: Assign falue to the data fields
             newNode->nomMhs = nim;
 
-            
+            // step 3: insert at beginning if list is empty or nim is smallest
+            if (START == NULL || nim <=START ->nomMhs)
             {
                 if (START != NULL && nim == START ->nomMhs)
                 {
