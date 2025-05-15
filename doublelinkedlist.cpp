@@ -218,7 +218,17 @@ int main()
 
     do
     {
-       
+        cout << "\nMenu:\n";
+        cout << "1. Add Record\n";
+        cout << "2. Delete Record\n";
+        cout << "3. view ascending\n";
+        cout << "4. View descending\n";
+        cout << "5. search record\n";
+        cout << " 6. exit\n";
+        cout << "Enter your choice:";
+
+        cin >> choice;
+        switch (choice)
         {
        
             
