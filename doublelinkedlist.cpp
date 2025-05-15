@@ -134,7 +134,8 @@ class Doublelinkedlist
         {
             if (START == NULL)
             {
-        
+                cout << "\nlist in empty" << endl;
+                return;
             }
            
 
