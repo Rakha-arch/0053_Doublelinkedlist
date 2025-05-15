@@ -161,7 +161,10 @@ class Doublelinkedlist
                 cout << "\nlist is emptu" << endl;
                 return;
             }
-      
+            // step1 : move to last Node
+            Node *currentNode = START;
+            int i = 0;
+            while (currentNode != NULL)
             {
                 currentNode = currentNode->next;
                 i++;
