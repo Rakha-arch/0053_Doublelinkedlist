@@ -156,9 +156,10 @@ class Doublelinkedlist
 
         void revtraverse()
         {
-           
+            if (START == NULL)
             {
-              
+                cout << "\nlist is emptu" << endl;
+                return;
             }
       
             {
