@@ -169,7 +169,51 @@ class Doublelinkedlist
                 currentNode = currentNode->next;
                 i++;
             }
-            //step2 : Traverse backward
-            cout << "\nrecording  "
+           
+            {
+                
+            }
         }
+
+        void searchData()
+        {
+            if (START == NULL)
+            {
+                cout << "\nLList is empy" << endl;
+                return;
+            }
+
+            int rollNo;
+            cout << "\nEnter the roll number to search:";
+            cin >> rollNo;
+
+            Node *current = START;
+
+           
+            {
+                cout << " Record not found\n";
+            }
+            else
+            {
+                cout << "Record founf\n";
+                cout << "Roll Number" << current->nomMhs << endl;
+            }
+         }
+};
+
+int main()
+{
+    Doublelinkedlist list;
+    char choice;
+
+    do
+    {
+       
+        {
+       
+            
+        }
+       
+    }
+    while (choice != '6');
 }
