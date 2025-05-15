@@ -65,6 +65,7 @@ class Doublelinkedlist
                 current = current->next;
             }
 
+            if (current->next !=NULL && nim == current->next->nomMhs)
             {
                 
             }
