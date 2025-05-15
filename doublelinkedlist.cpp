@@ -109,7 +109,10 @@ class Doublelinkedlist
             //step 2: if mode is at the beginning
             if (current == START)
             {
-               
+                START = current->next; //step 2a
+                if (START != NULL)
+                    START->prev = NULL; // STEP 2b
+
             }
             else
             {
