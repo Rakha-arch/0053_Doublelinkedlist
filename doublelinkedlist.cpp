@@ -106,6 +106,8 @@ class Doublelinkedlist
                 return;
             }
 
+            //step 2: if mode is at the beginning
+            if (current == START)
             {
                
             }
