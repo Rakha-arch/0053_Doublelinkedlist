@@ -39,7 +39,8 @@ class Doublelinkedlist
             {
                 if (START != NULL && nim == START ->nomMhs)
                 {
-                   
+                    cout << "\nDUplicate number not allowed" << endl;
+                    return;
                 }
                
 
