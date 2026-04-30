@@ -86,6 +86,27 @@ public:
         cin >> rollNo;
         Node* current = START;
 
-        
+        while (current != NULL && current->noMhs != rollNo)
+        current = current->next; 
+        if (current == NULL)
+        {
+            cout << "\nRoll number not found" << endl;
+            return;
+        }
+
+        if (current == START)
+        {
+            START = current->next;
+            if (START != NULL)
+                START->prev = NULL;
+        }
+        else
+        {
+            current->prev->next = current->next;
+            if (current->next != NULL)
+                current->next->prev = current->prev;
+        }
+        delete current;
+        cout << "record with roll number " << rollNo << " deleted successfully" << endl;
     }
 };
