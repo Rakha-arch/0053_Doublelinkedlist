@@ -7,7 +7,16 @@ class Node
 public:
     string data;
     Node* next;
-    Node* prev;
-    
-    Node(string value) : data(value), next(nullptr), prev(nullptr) {}
+    Node* prev;  
+};
+
+class DoubleLinkedList 
+{
+private:
+    Node*START;
+public:
+    DoubleLinkedList();
+    {
+        START = NULL;
+    }
 };
