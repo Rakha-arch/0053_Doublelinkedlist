@@ -178,3 +178,51 @@ public:
         }
     }
 };
+
+int main()
+{
+    DoubleLinkedList list;
+    char choice;
+
+    do
+    {
+        cout << "\nMenu:\n";
+        cout << "1. Add a record\n";
+        cout << "2. Delete a record\n";
+        cout << "3. Display records in ascending order\n";
+        cout << "4. Display records in descending order\n";
+        cout << "5. Search for a record\n";
+        cout << "6. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+        switch (choice)
+        {
+        case '1':
+            list.addNode();
+            break;
+        case '2':
+            list.hapus();
+            break;
+        case '3':
+            list.traverse();
+            break;
+        case '4':
+            list.revtraverse();
+            break;
+        case '5':
+            list.search();
+            break;
+        case '6':
+            cout << "Exiting..." << endl;
+            break;
+        default:
+            cout << "Invalid choice, please try again." << endl;
+        }
+        cout << "\nPress Enter to continue...";
+        cin.ignore();
+        cin.get();
+        cout << endl;
+        system("clear");
+    } while (choice != '6');
+
+}
