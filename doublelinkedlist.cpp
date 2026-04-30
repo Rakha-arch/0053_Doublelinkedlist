@@ -152,4 +152,29 @@ public:
             i--;
         }
     }
+
+    void search()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+        int rollNo;
+        cout << "\nEnter the roll number of the student to search: ";
+        cin >> rollNo;
+        Node* current = START;
+
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next; 
+        if (current == NULL)
+        {
+            cout << "\nRecord not found" << endl;
+        }
+        else
+        {
+            cout << "\nRecord found: ";
+            cout << "Roll number: " << current->noMhs << endl;
+        }
+    }
 };
