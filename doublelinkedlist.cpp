@@ -28,5 +28,8 @@ public:
 
         //step1
         Node* newNode = new Node();
+
+        //step2
+        newNode->noMhs = nim;
     }
 };
