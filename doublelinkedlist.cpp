@@ -65,5 +65,11 @@ public:
             cout << "\nDuplicate roll numbers are not allowed" << endl;
             return;
         }
+        //step9
+        newNode->next = current->next;
+        newNode->prev = current;
+        if (current->next != NULL)
+            current->next->prev = newNode;
+        current->next = newNode;
     }
 };
