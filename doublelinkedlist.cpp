@@ -43,6 +43,9 @@ public:
             //step4
             newNode->next = START;
             
+            //step5
+            if (START != NULL)
+                START->prev = newNode;
         }
     }
 };
