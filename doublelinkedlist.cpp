@@ -54,5 +54,16 @@ public:
             START = newNode;
             return;
         }
+        //step8
+        Node* current = START;
+        while (current->next != NULL && current->next->noMhs < nim)
+        {
+            current = current->next;
+        }
+        if (current->next != NULL && nim == current->next->noMhs)
+        {
+            cout << "\nDuplicate roll numbers are not allowed" << endl;
+            return;
+        }
     }
 };
